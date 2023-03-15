@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Marksmen</title>
+</head>
+<body>
+    <h1>Marksmen Index</h1>
+    <% for (let i=0; i<Marksman.length; i++) { %>
+        <a href="<%=Marksman[i]._id;%>">
+            <p><%=Marksman[i].name;%></p>
+        </a>
+    <% } %>
+</body>
+</html>

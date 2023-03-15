@@ -1,37 +1,41 @@
 const mongoose = require('mongoose');
 
 const marksmenSchema = new mongoose.Schema({
-    name: {type: String, required: true},
-    title: {type: String, required: true},
-    picture: {type: String, required: true},
+    name: {type: String},
+    title: {type: String},
+    picture: {type: String},
     passive: {
-        name: {type: String, required: true},
-        description: {type: String, required: true}
+        name: {type: String},
+        description: {type: String}
     },
     abilityQ: {
-        name: {type: String, required: true},
-        description: {type: String, required: true}
+        name: {type: String},
+        description: {type: String}
     },
     abilityW: {
-        name: {type: String, required: true},
-        description: {type: String, required: true}
+        name: {type: String},
+        description: {type: String}
     },
     abilityE: {
-        name: {type: String, required: true},
-        description: {type: String, required: true}
+        name: {type: String},
+        description: {type: String}
     },
     ultimate: {
-        name: {type: String, required: true},
-        description: {type: String, required: true}
+        name: {type: String},
+        description: {type: String}
     },
     stats: {
-        health1: {type: Number, required: true},
-        healthGrowth: {type: Number, required: true},
-        health18: {type: Number, required: true},
-        attack1: {type: Number, required: true},
-        attackGrowth: {type: Number, required: true},
-        attack18: {type: Number, required: true},
-        range: {type: Number, required: true},
-        speed: {type: Number, required: true}
+        health1: {type: Number},
+        healthGrowth: {type: Number},
+        health18: {type: Number},
+        attack1: {type: Number},
+        attackGrowth: {type: Number},
+        attack18: {type: Number},
+        range: {type: Number},
+        speed: {type: Number}
     }
 })
+
+const marksmanCollection = mongoose.model('Marksman', marksmenSchema)
+
+module.exports = marksmanCollection
