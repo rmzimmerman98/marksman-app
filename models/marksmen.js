@@ -384,18 +384,18 @@ module.exports = [
         },
         abilityW:
         {
-            name: '',
-            description: ''
+            name: 'Wolf\'s Frenzy',
+            description: 'PASSIVE: As Kindred move and attack, they build up to 100 stacks of Hunter\'s Vigor. At maximum stacks, Lamb\'s next basic attack heals her based on her missing health. The heal is not triggered if Kindred is at full health. ACTIVE: Wolf dashes to the target location, then claims the surrounding area as his territory for the next 8.5 seconds, separating from Lamb. He automatically attacks the closest nearby visible enemy within the area, prioritizing the last enemy Lamb has attacked, then enemy champions, then non-champions. Wolf\'s attacks deal magic damage and scale with 25% of Kindred\'s bonus attack speed. Against monsters, his attacks deal 150% damage and slow the target by 50% for 2 seconds.'
         },
         abilityE:
         {
-            name: '',
-            description: ''
+            name: 'Mounting Dread',
+            description: 'ACTIVE: Lamb fires a shot at the target enemy that slows them by 50% for 1 second and applies a stack of Mounting Dread for 4 seconds. Her basic attacks each apply an additional stack, refreshing the duration and stacking up to 4 times. Her next basic attack against a target with 3 stacks directs Wolf to pounce on the target, consuming all stacks to deal additional physical damage, capped against monsters. The additional damage will critically strike against targets below 15% of their maximum health, increasing the missing health portion, and cannot critically strike otherwise. The base damage of the pounce can independently critically strike.'
         },
         ultimate:
         {
-            name: '',
-            description: ''
+            name: 'Lamb\'s Respite',
+            description: 'ACTIVE: Lamb blesses the ground under herself for 4 seconds. All units inside the zone gain a minimum health threshold of 10% of their maximum health, and will become invulnerable for the remaining duration when they reach or are at the threshold, during which they also cannot be healed, but can still regenerate health. All targetable units within the zone are healed when the blessing ends.'
         },
         stats:
         {
@@ -407,6 +407,498 @@ module.exports = [
             attack18: 107.5,
             range: 500,
             speed: 325
+        }
+    },
+    {
+		name: 'Kog\'Maw',
+        title: 'the Mouth of the Abyss',
+        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/45/Kog%27MawSquare.png/revision/latest?cb=20170802031916',
+        passive: 
+        {
+            name: 'Icathian Surprise',
+            description: 'INNATE: Upon taking fatal damage, Kog\'Maw enters a zombie state for 4 seconds, gaining up to 40% bonus movement speed over the duration. At the end of the duration, he explodes to deal true damage to nearby enemies based on his level. While under this state, Kog\'Maw becomes invulnerable, untargetable, and immune to crowd control, but is also rendered unable to declare basic attacks, cast abilities, use summoner spells, and activate items.'
+        },
+        abilityQ: 
+        {
+            name: 'Caustic Spittle',
+            description: 'PASSIVE: Kog\'Maw gains bonus attack speed. ACTIVE: Kog\'Maw ejects a wad of spittle in the target direction that deals magic damage to the first enemy hit and reduces their armor and magic resistance for 4 seconds.'
+        },
+        abilityW:
+        {
+            name: 'Bio-Arcane Barrage',
+            description: 'ACTIVE: Kog\'Maw empowers his basic attacks for the next 8 seconds to bonus attack range and deal bonus magic damage on-hit, capped against minions and monsters.'
+        },
+        abilityE:
+        {
+            name: 'Void Ooze',
+            description: 'ACTIVE: Kog\'Maw spews a gob of ooze in the target direction that deals magic damage to enemies hit. A field of ooze is created in its wake for 4 seconds, slowing enemies.'
+        },
+        ultimate:
+        {
+            name: 'Living Artillery',
+            description: 'ACTIVE: Kog\'Maw spits a globule of acid into the air that drops to the target location after 0.6 seconds, granting sight of the area before dealing magic damage to enemies hit and revealing them for 2 seconds. Living Artillery\'s damage is increased based on their missing health, or instead by 100% if the target is below 40% maximum health. Kog\'Maw then gains a stack of Living Artillery for 8 seconds, refreshing on subsequent casts and stacking up to 9 times. LIVING ARTILLERY: For each stack, Living Artillery\'s mana cost is increased by 40.'
+        },
+        stats:
+        {
+            health1: 635,
+            heatlhGrowth: 99,
+            health18: 2318,
+            attack1: 61,
+            attackGrowth: 3.1,
+            attack18: 113.7,
+            range: 500,
+            speed: 300
+        }
+    },
+    {
+		name: 'Lucian',
+        title: 'the Purifier',
+        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1e/LucianSquare.png/revision/latest?cb=20170802043353',
+        passive: 
+        {
+            name: 'Lightslinger',
+            description: 'INNATE: After casting an ability, Lucian\'s next basic attack within 3.5 seconds fires an additional shot on-attack after 0.25 seconds, which deals 50% physical damage, increased to 100% AD against minions. The second shot applies on-hit and on-attack effects at 100% effectiveness and is affected by critical strike modifiers. If Lucian\'s primary target is killed before the second shot can go off, he automatically shoots another enemy in range. INNATE - VIGILANCE: Whenever Lucian is healed, shielded or granted a buff by an ally, his next two shots within 6 seconds are empowered to deal bonus magic damage on-hit. The empowered shots can stack up to 4 times.'
+        },
+        abilityQ: 
+        {
+            name: 'Piercing Light',
+            description: 'ACTIVE: Lucian fires a laser in a line in the direction of the target enemy that deals physical damage to enemies hit.'
+        },
+        abilityW:
+        {
+            name: 'Ardent Blaze',
+            description: 'ACTIVE: Lucian fires a missile in the target direction that explodes in a cross pattern upon hitting an enemy or reaching maximum range, dealing magic damage to enemies hit and granting sight of the area for 1 second. Enemies hit are marked for 6 seconds. Lucian gains bonus movement speed for 1 second when he or allied champions damage a marked target. Allied champions triggering this effect grant Lucian Vigilance.'
+        },
+        abilityE:
+        {
+            name: 'Relentless Pursuit',
+            description: 'PASSIVE: Relentless Pursuit\'s current cooldown is reduced by 1 second for each Lightslinger shot hit, doubled to 2 seconds against enemy champions. ACTIVE: Lucian dashes in the target direction.'
+        },
+        ultimate:
+        {
+            name: 'The Culling',
+            description: 'ACTIVE: Lucian Channeling icon.png channels for up to 3 seconds, rapidly firing up to 22 shots (based on critical strike chance) in the target direction. Each shot deals physical damage to the first enemy hit, doubled against minions. The Culling can be recast after 0.75 seconds during the channel, and does so automatically when the channel ends. While channeling, Lucian is ghosted and may still move and cast Relentless Pursuit. RECAST: Lucian ends The Culling.'
+        },
+        stats:
+        {
+            health1: 641,
+            heatlhGrowth: 100,
+            health18: 2341,
+            attack1: 60,
+            attackGrowth: 2.9,
+            attack18: 109.3,
+            range: 500,
+            speed: 335
+        }
+    },
+    {
+		name: 'Miss Forture',
+        title: 'the Bounty Hunter',
+        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9d/MissFortuneSquare.png/revision/latest?cb=20170802061243',
+        passive: 
+        {
+            name: 'Love Tap',
+            description: 'INNATE: Miss Fortune\'s basic attacks are empowered to apply a mark that expires upon attacking a new enemy. If the enemy was unmarked, this also deals  bonus physical damage, halved against minions.'
+        },
+        abilityQ: 
+        {
+            name: 'Double Up',
+            description: 'ACTIVE: Miss Fortune fires a shot at the target enemy that deals physical damage, which then bounces to hit another enemy behind them. This applies on-attack effects to the first enemy hit, and on-hit effects to both enemies hit. Double Up\'s bounce is affected by critical strike modifiers. If Double Up kills the primary target, the bounce will critically strike. The bounce prioritizes units directly behind the primary target. A target does not have to be visible be hit by the bounce.'
+        },
+        abilityW:
+        {
+            name: 'Strut',
+            description: 'PASSIVE: Miss Fortune gains 25 bonus movement speed after 5 seconds without taking persistent damage. This bonus is increased after another 5 seconds, and is granted instantly whenever Strut is cast or upon respawning. ACTIVE: Miss Fortune gains bonus attack speed for 4 seconds. Marking a new target with Love Tap reduces Strut\'s current cooldown by 2 seconds.'
+        },
+        abilityE:
+        {
+            name: 'Make It Rain',
+            description: 'ACTIVE: Miss Fortune casts a storm of bullets at the target location for 2 seconds, granting sight of the area, dealing magic damage every 0.25 seconds to enemies within, and slowing them.'
+        },
+        ultimate:
+        {
+            name: 'Bullet Time',
+            description: 'ACTIVE: Miss Fortune channels for up to 3 seconds, firing a number of waves of bullets in the target direction. Each wave is in a spread of 6 projectiles that deals physical damage to enemies hit. Each of the waves can critically strike.'
+        },
+        stats:
+        {
+            health1: 640,
+            heatlhGrowth: 103,
+            health18: 2391,
+            attack1: 52,
+            attackGrowth: 2.4,
+            attack18: 92.8,
+            range: 550,
+            speed: 325
+        }
+    },
+    {
+		name: 'Samira',
+        title: 'the Desert Rose',
+        picture: 'https://static.wikia.nocookie.net/leagueoflegends/images/3/31/Samira_OriginalSquare.png/revision/latest/scale-to-width-down/75?cb=20200829040527',
+        passive: 
+        {
+            name: 'Daredevil Impulse',
+            description: 'INNATE: Samira\'s damaging basic attacks and abilities against at least one enemy champion different from the previous damaging hit made against champions generate a stack of Style for 6 seconds, refreshing on subsequent hits and stacking up to 6 times. STYLE: For each stack, Samira gains bonus movement speed. At maximum stacks, Samira can cast Inferno Trigger. INNATE: Samira\'s basic attacks against targets in 200 range use her blade, becoming non-projectile. Samira\'s basic attack against an immobilized target is empowered to have an uncancellable windup and deal the attack\'s damage over 6 strikes in 0.5 seconds. If the target is a monster or is airborne, the attack also knocks them up for 0.5 seconds. Samira will dash into her attack range of the target if they are nearby, though not through terrain.'
+        },
+        abilityQ: 
+        {
+            name: 'Flair',
+            description: 'ACTIVE: Samira fires a shot in the target direction that deals physical damage to the first enemy hit. If a targetable enemy is in front of Samira at the time of cast, she will instead slash with her blade in a cone, dealing the same damage to enemies hit. If Flair is cast during Wild Rush, Samira deploys explosives in her wake that detonate upon the end of the dash, dealing the same damage to enemies hit. Flair can critically strike for and will apply life steal at 66.6% effectiveness.'
+        },
+        abilityW:
+        {
+            name: 'Blade Whirl',
+            description: 'ACTIVE: Samira spins her blade over 0.75 seconds, destroying all hostile non-turret projectiles within the area for the duration. Samira slashes twice during Blade Whirl, each one dealing physical damage to all nearby enemies. The first slash occurs immediately and the second one occurs after the duration.'
+        },
+        abilityE:
+        {
+            name: 'Wild Rush',
+            description: 'ACTIVE: Samira dashes a fixed distance in the direction of the target enemy or enemy structure, dealing magic damage to enemies she passes through. She also gains bonus attack speed for 3 seconds. Scoring a takedown against an enemy champion within 3 seconds of damaging them resets Wild Rush\'scooldown.'
+        },
+        ultimate:
+        {
+            name: 'Inferno Trigger',
+            description: 'ACTIVE: Samira unleashes a torrent of shots for 2.3 seconds, reducing her movement speed by 30% and rapidly shooting at nearby enemies over 2 seconds at sporadic times in 0.2-second intervals each, dealing physical damage with each shot, reduced by 75% against minions. Each shot can critically strike and applies life steal at 50% effectiveness.'
+        },
+        stats:
+        {
+            health1: 600,
+            heatlhGrowth: 108,
+            health18: 2436,
+            attack1: 57,
+            attackGrowth: 3.3,
+            attack18: 113.1,
+            range: 500,
+            speed: 335
+        }
+    },
+    {
+		name: 'Senna',
+        title: 'the Redeemer',
+        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/21/SennaSquare.png/revision/latest?cb=20191102003549',
+        passive: 
+        {
+            name: 'Absolution',
+            description: 'INNATE - WEAKENED SOUL: Senna\'s basic attacks on-hit and damaging abilities on enemy champions apply a stack of Mist for 4 seconds. Subsequent hits will collect Mist and deal bonus physical damage equal based on the target\'s current health, rendering the target immune to further Mist applications for a few seconds. This damage applies life steal at 100% effectiveness. Enemies that die near Senna may spawn a Mist Wraith from their corpse. A Mist Wraith lasts 8 seconds and Senna can basic attack or hit it with Piercing Darkness or Dawning Shadow to kill them instantly, granting her 8 Gold and collecting their Mist. Enemy champions and large monsters will spawn a Mist Wraith. Epic monsters will spawn 2 Mist Wraiths. Minions and lesser monsters that Senna kills have a 8.3% chance to spawn a Mist Wraith. Large minions that Senna does not kill will spawn a Mist Wraith, while lesser minions and lesser monsters that Senna does not kill have a 28% chance to spawn. MIST: For each stack of Mist, Senna gains 0.75 bonus attack damage. For every 20 stacks, she also gains 20 bonus attack range and 10% critical strike chance, capped at 100% critical strike chance. Additionally, 35% of the generated excess critical strike chance is converted into life steal. INNATE - RELIC CANNON: Senna\'s basic attacks on-hit deal 20% AD bonus physical damage and grant her 10% of the target\'s movement speed as bonus movement speed for 0.5 seconds. This damage applies life steal at 100% effectiveness.'
+        },
+        abilityQ: 
+        {
+            name: 'Piercing Darkness',
+            description: 'ACTIVE: Senna fires a spectral laser in the direction of the target unit, healing herself and allied champions hit, and dealing physical damage to enemies hit in a thinner line. Enemies hit are slowed by 15% for a duration. The damage against champions applies life steal at 100% effectiveness. Upon being hit, enemy turrets, wards, jungle plants, Mist Wraiths and any other attack-interactive units are considered basic attacked once, while champions and turrets* are applied on-hit effects at 100% effectiveness. Piercing Darkness\' current cooldown is reduced by 1 second on-hit.'
+        },
+        abilityW:
+        {
+            name: 'Last Embrace',
+            description: 'ACTIVE: Senna throws a globule of Black Mist in the target direction that deals physical damage to the first enemy hit and attaches to them for 1 second. After the duration or when the target dies, the Black Mist spreads out of the target, rooting them and surrounding enemies for a few seconds.'
+        },
+        abilityE:
+        {
+            name: 'Curse of the Black Mist',
+            description: 'ACTIVE: Senna surrounds herself with an aura of mist and gains camouflage for a duration. If Senna breaks the camouflage, she regains it after 1.75 seconds without performing actions that break stealth. Allied champions who enter the mist gain Wraith Form for a duration equal to the remaining duration. WRAITH FORM: Gain camouflage. Enemies will have obscured vision of camouflaged Wraiths moving outside of the mist. Wraith Form can be regained if lost by breaking the camouflage after 1.75 seconds without performing actions that break stealth. Wraith Form ends immediately upon Senna\'s death. Senna and allies camouflaged by Curse of the Black Mist also gain 20% bonus movement speed.'
+        },
+        ultimate:
+        {
+            name: 'Dawning Shadow',
+            description: 'ACTIVE: Senna fires two waves of spectral light in the target direction, granting sight of the area briefly along the path. The center wave deals physical damage to enemy champions hit and reveals them for 3 seconds. It also collects Mist Wraiths it hits. The broad wave grants a shield to Senna and allied champions hit for 3 seconds.'
+        },
+        stats:
+        {
+            health1: 530,
+            heatlhGrowth: 89,
+            health18: 2043,
+            attack1: 50,
+            attackGrowth: 0,
+            attack18: 50,
+            range: 600,
+            speed: 330
+        }
+    },
+    {
+		name: 'Sivir',
+        title: 'the Battle Mistress',
+        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e1/SivirSquare.png/revision/latest?cb=20170802131925',
+        passive: 
+        {
+            name: 'Fleet of Foot',
+            description: 'INNATE: Sivir\'s basic attacks and ability hits against enemy champions grant her bonus movement speed decaying over 1.5 seconds, refreshing on subsequent hits.'
+        },
+        abilityQ: 
+        {
+            name: 'Boomerang Blade',
+            description: 'ACTIVE: Sivir hurls her crossblade in the target direction, dealing physical damage to enemies within its path. Boomerang Blade\'s damage is reduced based on non-champions hit. Upon reaching maximum range, the crossblade returns to her, resetting the damage modifier and dealing the same damage to enemies on its way back.'
+        },
+        abilityW:
+        {
+            name: 'Ricochet',
+            description: 'ACTIVE: Sivir empowers her crossblade for the next 4 seconds, gaining bonus attack speed and causing her basic attacks to bounce to additional surrounding enemies, dealing them physical damage. If the triggering attack critically strikes, the bounces will do so as well. Ricochet deals 65% damage against minions and executes them if they would be left below 15 health. Bounces occur only up to 8 times and can target each enemy up to one additional time per empowered attack. They prioritize the nearest new target, then the nearest target if no new targets are available.'
+        },
+        abilityE:
+        {
+            name: 'Spell Shield',
+            description: 'ACTIVE: Sivir gains a spell shield for 1.5 seconds. Upon successfully blocking a hostile effect, she heals herself and activates Fleet of Foot after 0.25 seconds.'
+        },
+        ultimate:
+        {
+            name: 'On The Hunt',
+            description: 'ACTIVE: Sivir gains On the Hunt for a duration and grants it to nearby allied champions for the remaining duration. ON THE HUNT: Gain  bonus movement speed. While active, Sivir\'s basic attacks on-attack reduce her basic abilities\' current cooldowns by 0.5 seconds each. On the Hunt\'s duration is refreshed whenever Sivir scores a takedown against an enemy champion within 3 seconds of damaging them.'
+        },
+        stats:
+        {
+            health1: 600,
+            heatlhGrowth: 104,
+            health18: 2368,
+            attack1: 58,
+            attackGrowth: 2.8,
+            attack18: 105.6,
+            range: 500,
+            speed: 335
+        }
+    },
+    {
+		name: 'Tristana',
+        title: 'the Yordle Gunner',
+        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/06/TristanaSquare.png/revision/latest?cb=20200327221741',
+        passive: 
+        {
+            name: 'Draw a Bead',
+            description: 'INNATE: Tristana\'s basic attacks, Explosive Charge and Buster Shot gain bonus range based on level.'
+        },
+        abilityQ: 
+        {
+            name: 'Rapid Fire',
+            description: 'ACTIVE: Tristana empowers her cannon, gaining bonus attack speed for 7 seconds.'
+        },
+        abilityW:
+        {
+            name: 'Rocket Jump',
+            description: 'ACTIVE: Tristana jumps to the target location. Upon landing, she deals magic damage to nearby enemies and slows them by 60% for a duration. Scoring an enemy takedown or detonating Explosive Charge at maximum stacks on a champion will reset Rocket Jump\'s cooldown.'
+        },
+        abilityE:
+        {
+            name: 'Explosive Charge',
+            description: 'PASSIVE: Tristana\'s basic attacks are empowered to trigger an explosion when they kill the target, dealing magic damage to nearby enemies. ACTIVE: Tristana tosses an explosive charge at the target enemy that attaches to them for 4 seconds. The charge then detonates, dealing physical damage to nearby enemies. Explosive Charge can target and damage turrets, and explodes in a larger radius on a turret. Tristana\'s basic attacks on-hit and abilities against the target increase Explosive Charge\'s damage by 30%, stacking up to 4 times for a maximum 120% increase, upon which the charge also detonates instantly.'
+        },
+        ultimate:
+        {
+            name: 'Buster Shot',
+            description: 'ACTIVE: Tristana fires a massive cannonball at the target enemy that deals magic damage. They and surrounding enemies are also knocked back and stunned for up to 0.75 seconds, during which they are revealed.'
+        },
+        stats:
+        {
+            health1: 670,
+            heatlhGrowth: 102,
+            health18: 2404,
+            attack1: 59,
+            attackGrowth: 3.7,
+            attack18: 121.9,
+            range: 525,
+            speed: 325
+        }
+    },
+    {
+		name: 'Twitch',
+        title: 'the Plague Rat',
+        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/79/TwitchSquare.png/revision/latest?cb=20170802161732',
+        passive: 
+        {
+            name: 'Deadly Venom',
+            description: 'INNATE: Twitch\'s basic attacks on-hit apply a stack of Deadly Venom for 6 seconds, refreshing on subsequent applications and stacking up to 6 times. DEADLY VENOM: For each stack, the target is dealt increasing true damage per second over the duration. This effect is considered a Poison icon.png poison.'
+        },
+        abilityQ: 
+        {
+            name: 'Ambush',
+            description: 'ACTIVE: After a 1-second delay, Twitch becomes camouflaged for a duration. Attacking or casting Venom Cask or Contaminate ends Ambush immediately. During this time, Twitch gains 10% bonus movement speed, increased to 30% while facing enemy champions within a 1000-unit radius who cannot see him. Upon breaking stealth, Twitch gains bonus attack speed for 5 seconds. When an enemy champion dies while afflicted with Deadly Venom, Ambush\'s cooldown is reset.'
+        },
+        abilityW:
+        {
+            name: 'Venom Cask',
+            description: 'ACTIVE: Twitch hurls a cask of venom that explodes at the target location, applying Deadly Venom to enemies hit and granting sight of the area. The area then becomes contaminated for 3 seconds, applying a Deadly Venom stack each second to enemies within and slowing them.'
+        },
+        abilityE:
+        {
+            name: 'Contaminate',
+            description: 'ACTIVE: Twitch sends out a lethal toxin to each nearby enemy afflicted by Deadly Venom, dealing them physical damage. Contaminate deals additional physical damage and 30% AP magic damage for each stack of Deadly Venom on the target.'
+        },
+        ultimate:
+        {
+            name: 'Spray and Pray',
+            description: 'ACTIVE: Twitch gains bonus attack damage and 300 bonus attack range for 6 seconds, during which his basic attacks are replaced by bolts that travel slightly further than his attack range in a straight line, dealing damage to every enemy unit hit. The bolts apply on-hit effects at 100% effectiveness, and can critically strike.'
+        },
+        stats:
+        {
+            health1: 682,
+            heatlhGrowth: 100,
+            health18: 2382,
+            attack1: 59,
+            attackGrowth: 3.1,
+            attack18: 111.7,
+            range: 550,
+            speed: 330
+        }
+    },
+    {
+		name: 'Varus',
+        title: 'the Arrow of Retribution',
+        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c2/VarusSquare.png/revision/latest?cb=20171215034329',
+        passive: 
+        {
+            name: 'Living Vengeance',
+            description: 'INNATE: When Varus kills an enemy, he gains bonus attack speed for 5 to 11 seconds based on level, increased upon scoring an enemy champion takedown.'
+        },
+        abilityQ: 
+        {
+            name: 'Piercing Arrow',
+            description: 'ACTIVE: Varus charges while being slowed by 20% for up to 4 seconds to increase Piercing Arrow\'s range and damage over the first 1.25 seconds of the channel. Piercing Arrow can be recast within the duration. If the charge completes without reactivation, Piercing Arrow is cancelled and refunds 50% of the mana cost. RECAST: Varus fires a piercing arrow in the target direction that deals physical damage to enemies hit. The damage of the arrow as well as any detonated Blight stacks are increased based on channel time, and the arrow\'s damage is reduced by based on enemies hit.'
+        },
+        abilityW:
+        {
+            name: 'Blighted Quiver',
+            description: 'PASSIVE: Varus\' basic attacks are empowered to deal bonus magic damage and apply a stack of Blight on-hit for 6 seconds, refreshing on subsequent applications and stacking up to 3 times. Varus\' abilities consume all Blight stacks on enemies hit to apply the effect. BLIGHT: For each stack consumed, the target is dealt bonus magic damage. Against a champion or epic monster, this also reduces his basic abilities\' current cooldowns by 12% of the total cooldown for each stack, up to 36% per target. This damage is capped against monsters. ACTIVE: Varus\' next Piercing Arrow within 5.5 seconds is empowered to deal bonus magic damage based on the target\'s missing health. This damage is capped against monsters. If Varus does not cast Piercing Arrow, Blighted Quiver can be recast after 1 second within the duration, and does so automatically afterwards or when he dies. Blighted Quiver can be cast during the first 0.25 seconds of Piercing Arrow\'s Piercing Arrow\'s charge, and will be placed on full cooldown even if Piercing Arrow Piercing Arrow is not recast. RECAST: Varus ends Blighted Quiver and places it on a 1-second cooldown.'
+        },
+        abilityE:
+        {
+            name: 'Hail of Arrows',
+            description: 'ACTIVE: Varus fires a hail of arrows at the target location that land after 0.5 seconds, dealing physical damage to enemies hit. The area then becomes desecrated for 4 seconds, slowing enemies within and inflicting them with Grievous Wounds.'
+        },
+        ultimate:
+        {
+            name: 'Chain of Corruption',
+            description: 'ACTIVE: Varus unleashes a tendril of corruption in the target direction that infects the first enemy champion hit, dealing magic damage and rooting them for 2 seconds, during which they are revealed. Over the first 1.5 seconds, they are also inflicted with maximum stacks of Blight. Upon impact, the tendril roots into the ground from which it seeks out nearby enemy champions. If a target does not leave the area within 2 seconds, they subsequently become infected as well, taking the same damage and effects. A new tendril is then spread out from the infected target that is closest to a nearby uninfected enemy champion. The infection can spread repeatedly until there are no new targets.'
+        },
+        stats:
+        {
+            health1: 600,
+            heatlhGrowth: 105,
+            health18: 2385,
+            attack1: 62,
+            attackGrowth: 3.4,
+            attack18: 119.8,
+            range: 575,
+            speed: 330
+        }
+    },
+    {
+		name: 'Vayne',
+        title: 'the Night Hunter',
+        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/95/VayneSquare.png/revision/latest?cb=20170802170334',
+        passive: 
+        {
+            name: 'Night Hunter',
+            description: 'INNATE: Vayne gains 30 bonus movement speed while facing a nearby visible enemy champion. FINAL HOUR BONUS: The bonus movement speed is tripled to 90.'
+        },
+        abilityQ: 
+        {
+            name: 'Tumble',
+            description: 'ACTIVE: Vayne dashes a fixed distance in the target direction, though not through terrain, and empowers her next basic attack within 7 seconds to deal bonus physical damage.'
+        },
+        abilityW:
+        {
+            name: 'Silver Bolts',
+            description: 'PASSIVE: Vayne\'s basic attacks on-hit and Condemn apply a stack of Silver Bolts for 3.5 seconds, refreshing on subsequent applications, expiring upon attacking a new enemy, and stacking up to 3 times. The third stack consumes them all to deal bonus true damage, with a minimum threshold. This damage is capped against monsters.'
+        },
+        abilityE:
+        {
+            name: 'Condemn',
+            description: 'ACTIVE: Vayne fires a heavy bolt at the target enemy that deals physical damage and knocks them back 475 units, though not through terrain. If the target collides with terrain, they take bonus physical damage and become stunned for 1.5 seconds.'
+        },
+        ultimate:
+        {
+            name: 'Final Hour',
+            description: 'ACTIVE: Vayne equips her crossbow, gaining bonus attack damage and tripling Night Hunter\'s bonus for a duration. Additionally, Tumble becomes empowered with a reduced cooldown, and grants Vayne invisibility for 1 second. Attacking or casting Condemn breaks the stealth immediately. Scoring an enemy champion takedown within 3 seconds of damaging them will extend Final Hour\'s duration by 4 seconds, up to its original duration.'
+        },
+        stats:
+        {
+            health1: 550,
+            heatlhGrowth: 103,
+            health18: 2301,
+            attack1: 60,
+            attackGrowth: 2.35,
+            attack18: 99.95,
+            range: 550,
+            speed: 330
+        }
+    },
+    {
+		name: 'Xayah',
+        title: 'the Rebel',
+        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b5/XayahSquare.png/revision/latest?cb=20170802181210',
+        passive: 
+        {
+            name: 'Clean Cuts',
+            description: 'INNATE: Xayah\'s ability casts generate 3 stacks of Clean Cuts, lasting for 8 seconds, refreshing on subsequent casts, and stacking up to 5 times. Xayah\'s basic attacks are empowered to each consume a stack on-attack to instead shoot a Feather that deals the attack\'s damage to the primary target and reduced damage to other enemies hit, with the secondary damage also critically striking if the main attack does. INNATE - LOVER\'S LEAP: If either Xayah or Rakan Rakan is channeling Recall, the other may move nearby and channel their own to join alongside them. Both reach base at the time of which the initiator\'s Recall completes.'
+        },
+        abilityQ: 
+        {
+            name: 'Double Daggers',
+            description: 'ACTIVE: Xayah barrages two Feathers in the target direction that each deal physical damage to enemies hit. Targets hit after the first take 50% reduced damage.'
+        },
+        abilityW:
+        {
+            name: 'Deadly Plumage',
+            description: 'ACTIVE: Xayah enters a frenzy for 4 seconds, gaining bonus attack speed and empowering her basic attacks to strike a second time, dealing 20% damage. Whenever Xayah hits an enemy champion with the strike, she gains 30% bonus movement speed for 1.5 seconds.'
+        },
+        abilityE:
+        {
+            name: 'Bladecaller',
+            description: 'ACTIVE: Xayah recalls all planted Feathers to shoot back to her, each dealing physical damage to enemies hit, increased based on critical strike chance. Bladecaller deals 50% damage to minions. A target hit by at least three Feathers is rooted for 1.25 seconds.'
+        },
+        ultimate:
+        {
+            name: 'Featherstorm',
+            description: 'ACTIVE: Xayah leaps into the air, becoming untargetable and ghosted for 1.5 seconds. After 1 second, she shoots 5 Feathers in a cone in the target direction that deal physical damage to enemies hit.'
+        },
+        stats:
+        {
+            health1: 660,
+            heatlhGrowth: 102,
+            health18: 2394,
+            attack1: 60,
+            attackGrowth: 3.5,
+            attack18: 127.5,
+            range: 525,
+            speed: 330
+        }
+    },
+    {
+		name: 'Zeri',
+        title: 'the Spark of Zaun',
+        picture: 'https://static.wikia.nocookie.net/leagueoflegends/images/7/7d/Zeri_OriginalSquare.png/revision/latest/smart/width/250/height/250?cb=20220330171840',
+        passive: 
+        {
+            name: 'Living Battery',
+            description: 'INNATE: Zeri absorbs the energy of shields she damages, granting herself a shield equal to 60% of the post-mitigation damage dealt to the shield. Each instance of shield gained by Living Battery lasts for 3 seconds. INNATE - GOTTA ZIP!: Whenever Zeri gains a shield, she gains 10% bonus movement speed for 2 seconds.'
+        },
+        abilityQ: 
+        {
+            name: 'Burst Fire',
+            description: 'ACTIVE: Zeri fires a burst of 7 rounds in the target direction that each deal physical damage to the first enemy hit. Burst Fire\'s projectile is treated as a basic attack: it hits any enemy unit a typical basic attack can; deals basic damage; can critically strike, and applies on-hit and on-attack effects at 100% effectiveness to the first enemy hit. Burst Fire\'s cooldown and cast time are reduced with attack speed, with the maximum of 1.5 attacks per second. 70% of attack speed in excess of the cap is converted into bonus attack damage.'
+        },
+        abilityW:
+        {
+            name: 'Ultrashock Laser',
+            description: 'ACTIVE: Zeri fires an electric pulse in the target direction that deals physical damage to the first enemy hit and slows them for 2 seconds. If the pulse hits terrain, it transforms into a laser in a line that grants sight of the area for 1.75 seconds and fires after 0.85 seconds, applying the same effects to enemies hit and critically striking against champions and monsters.'
+        },
+        abilityE:
+        {
+            name: 'Spark Surge',
+            description: 'ACTIVE: Zeri dashes in the target direction. She will dash farther across terrain if Spark Surge was cast within 50 units of any, gaining unobstructed vision of the surrounding 800 units and revealing herself while there are enemy champions within 1500 units of her. Afterwards, she gains Lightning Rounds for 5 seconds, empowering Burst Fire to deal bonus magic damage to the first enemy hit, increased based on critical strike chance, and pierce through enemies, though dealing modified damage after the first and not applying attack effects nor life steal to secondary targets. This damage is affected by critical strike modifiers. Spark Surge\'s current cooldown is reduced by 0.5 seconds for every champion Zeri hits with charged basic attacks or abilities, increased to 1.5 seconds if she does so with a cast of Burst Fire or Ultrashock Laser that critically strikes.'
+        },
+        ultimate:
+        {
+            name: 'Lightning Crash',
+            description: 'ACTIVE: Zeri discharges an electric nova that deals magic damage to nearby enemies. If this hits at least one enemy champion, she enters Overcharged for 5 seconds. Hitting an enemy champion with an ability or charged charged basic attack will extend the duration by 1.5 seconds, up to its original duration. OVERCHARGED: Zeri gains 30% bonus attack speed and 10% bonus movement speed. Burst Fire is empowered to have a 20% shorter cast time and instead fire 3 rounds that travel with increased speed and chain to the nearest visible enemy within 650 units of the target, up to 4 subsequent targets, to deal 25% AD physical damage. This damage can critically strike. During Overcharged, Zeri can generate stacks of Hypercharged from enemy champions that last 1.5 seconds. She generates 1 stack for each one she hits with an ability or charged basic attack, increased to 3 on abilities that critically strike. Subsequent hits refresh the duration of Hypercharged. Burst Fire grants stacks only against the first target hit. HYPERCHARGED: For each stack, Zeri gains 0.5% bonus movement speed.'
+        },
+        stats:
+        {
+            health1: 630,
+            heatlhGrowth: 115,
+            health18: 2585,
+            attack1: 53,
+            attackGrowth: 1.3,
+            attack18: 75.1,
+            range: 500,
+            speed: 330
         }
     },
 ]
