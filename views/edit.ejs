@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit</title>
+</head>
+<body>
+    <nav>
+        <a href="/marksmen">Back to Marksmen</a>
+    </nav>
+    <h1>Edit Marksman Page</h1>
+    <form action="/<%=Marksman.id%>?_method=PUT" method="POST">
+        Name: <input type="text" name="name" value="<%=Marksman.name%>"><br>
+        Title: <input type="text" name="title" value="<%=Marksman.title%>"><br>
+        Passive Name: <input type="text" name="passive.name" value="<%=Marksman.passive.name%>"><br>
+        Passive Description: <input type="text" name="passive.description" value="<%=Marksman.passive.description%>"><br>
+        Q Name: <input type="text" name="abilityQ.name" value="<%=Marksman.abilityQ.name%>"><br>
+        Q Description: <input type="text" name="abilityQ.description" value="<%=Marksman.abilityQ.description%>"><br>
+        W Name: <input type="text" name="abilityW.name" value="<%=Marksman.abilityW.name%>"><br>
+        W Description: <input type="text" name="abilityW.description" value="<%=Marksman.abilityW.description%>"><br>
+        E Name: <input type="text" name="abilityE.name" value="<%=Marksman.abilityE.name%>"><br>
+        E Description: <input type="text" name="abilityE.description" value="<%=Marksman.abilityE.description%>"><br>
+        Ultimate Name: <input type="text" name="ultimate.name" value="<%=Marksman.ultimate.name%>"><br>
+        Ultimate Description: <input type="text" name="ultimate.description" value="<%=Marksman.ultimate.description%>"><br>
+        Stats <br>
+        Heatlh at Level 1: <input type="number" name="stats.health1" value="<%=Marksman.stats.health1%>"><br>
+        Health Growth: <input type="number" name="stats.healthGrowth" value="<%=Marksman.stats.healthGrowth%>"><br>
+        Health at Level 18: <input type="number" name="stats.health18" value="<%=Marksman.stats.health18%>"><br>
+        Attack at Level 1: <input type="number" name="stats.attack1" value="<%=Marksman.stats.attack1%>"><br>
+        Attack Growth: <input type="number" name="stats.attackGrowth" value="<%=Marksman.stats.attackGrowth%>"><br>
+        Attack at Level 18: <input type="number" name="stats.attack18" value="<%=Marksman.stats.attack18%>"><br>
+        Attack Range: <input type="number" name="stats.range" value="<%=Marksman.stats.range%>"><br>
+        Attack Speed: <input type="number" name="stats.speed" value="<%=Marksman.stats.speed%>"><br>
+        <input type="submit" value="Edit Marksman">
+    </form>
+</body>
+</html>

@@ -5,10 +5,13 @@
     <title>Marksmen</title>
 </head>
 <body>
+    <nav>
+        <a href="/marksmen/new">Add a New Marksman</a>
+    </nav>
     <h1>Marksmen Index</h1>
     <% for (let i=0; i<Marksman.length; i++) { %>
-        <a href="<%=Marksman[i]._id;%>">
-            <p><%=Marksman[i].name;%></p>
+        <a href="<%=Marksman[i].id;%>">
+            <p><%=Marksman[i].name;%> <%=Marksman[i].title;%></p>
         </a>
     <% } %>
 </body>

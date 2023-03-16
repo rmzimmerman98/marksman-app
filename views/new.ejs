@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Marksman</title>
+</head>
+<body>
+    <nav>
+        <a href="/marksmen">Back to Marksmen</a>
+    </nav>
+    <h1>New Marksman Page</h1>
+    <form action="/marksmen" method="POST">
+        Name: <input type="text" name="name"><br>
+        Title: <input type="text" name="title"><br>
+        Passive Name: <input type="text" name="passive.name"><br>
+        Passive Description: <input type="text" name="passive.description"><br>
+        Q Name: <input type="text" name="abilityQ.name"><br>
+        Q Description: <input type="text" name="abilityQ.description"><br>
+        W Name: <input type="text" name="abilityW.name"><br>
+        W Description: <input type="text" name="abilityW.description"><br>
+        E Name: <input type="text" name="abilityE.name"><br>
+        E Description: <input type="text" name="abilityE.description"><br>
+        Ultimate Name: <input type="text" name="ultimate.name"><br>
+        Ultimate Description: <input type="text" name="ultimate.description"><br>
+        Stats
+        Heatlh at Level 1: <input type="number" name="stats.health1"><br>
+        Health Growth: <input type="number" name="stats.healthGrowth"><br>
+        Health at Level 18: <input type="number" name="stats.health18"><br>
+        Attack at Level 1: <input type="number" name="stats.attack1"><br>
+        Attack Growth: <input type="number" name="stats.attackGrowth"><br>
+        Attack at Level 18: <input type="number" name="stats.attack18"><br>
+        Attack Range: <input type="number" name="stats.range"><br>
+        Attack Speed: <input type="number" name="stats.speed"><br>
+        <input type="submit" value="Add Marksman">
+    </form>
+</body>
+</html>
