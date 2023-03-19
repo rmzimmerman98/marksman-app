@@ -2,36 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>New Marksman</title>
 </head>
 <body>
+    <div class=".container">
     <nav>
         <a href="/marksmen">Back to Marksmen</a>
     </nav>
     <h1>New Marksman Page</h1>
     <form action="/marksmen" method="POST">
-        Name: <input type="text" name="name"><br>
-        Title: <input type="text" name="title"><br>
-        Passive Name: <input type="text" name="passive.name"><br>
-        Passive Description: <input type="text" name="passive.description"><br>
-        Q Name: <input type="text" name="abilityQ.name"><br>
-        Q Description: <input type="text" name="abilityQ.description"><br>
-        W Name: <input type="text" name="abilityW.name"><br>
-        W Description: <input type="text" name="abilityW.description"><br>
-        E Name: <input type="text" name="abilityE.name"><br>
-        E Description: <input type="text" name="abilityE.description"><br>
-        Ultimate Name: <input type="text" name="ultimate.name"><br>
-        Ultimate Description: <input type="text" name="ultimate.description"><br>
-        Stats
-        Heatlh at Level 1: <input type="number" name="stats.health1"><br>
-        Health Growth: <input type="number" name="stats.healthGrowth"><br>
-        Health at Level 18: <input type="number" name="stats.health18"><br>
-        Attack at Level 1: <input type="number" name="stats.attack1"><br>
-        Attack Growth: <input type="number" name="stats.attackGrowth"><br>
-        Attack at Level 18: <input type="number" name="stats.attack18"><br>
-        Attack Range: <input type="number" name="stats.range"><br>
-        Attack Speed: <input type="number" name="stats.speed"><br>
-        <input type="submit" value="Add Marksman">
+        <input class="form-control" type="text" placeholder="Name" name="name"><br>
+        <input class="form-control" type="text" placeholder="Title" name="title"><br>
+        <input class="form-control" type="text" placeholder="Picture" name="picture"><br>
+        <input class="form-control" type="text" placeholder="Passive Name" name="passive.name"><br>
+        <input class="form-control" type="text" placeholder="Passive Description" name="passive.description"><br>
+        <input class="form-control" type="text" placeholder="Ability 1 Name" name="abilityQ.name"><br>
+        <input class="form-control" type="text" placeholder="Ability 1 Description" name="abilityQ.description"><br>
+        <input class="form-control" type="text" placeholder="Ability 2 Name" name="abilityW.name"><br>
+        <input class="form-control" type="text" placeholder="Ability 2 Description" name="abilityW.description"><br>
+        <input class="form-control" type="text" placeholder="Ability 3 Name" name="abilityE.name"><br>
+        <input class="form-control" type="text" placeholder="Ability 3 Description" name="abilityE.description"><br>
+        <input class="form-control" type="text" placeholder="Ultimate Ability Name" name="ultimate.name"><br>
+        <input class="form-control" type="text" placeholder="Ultimate Ability Description" name="ultimate.description"><br>
+        <input class="form-control" type="number" placeholder="Health at Level 1" name="stats.health1"><br>
+        <input class="form-control" type="number" placeholder="Health at Level 18" name="stats.health18"><br>
+        <input class="form-control" type="number" placeholder="Attack at Level 1" name="stats.attack1"><br>
+        <input class="form-control" type="number" placeholder="Attack at Level 18" name="stats.attack18"><br>
+        <input class="form-control" type="number" placeholder="Attack Range" name="stats.range"><br>
+        <input class="form-control" type="number" placeholder="Movement Speed" name="stats.speed"><br>
+        <input class="btn btn-success" type="submit" value="Add Marksman">
     </form>
+</div>
 </body>
 </html>

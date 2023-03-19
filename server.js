@@ -10,11 +10,11 @@ app.use(methodOverride('_method'))
 app.use(express.urlencoded({extended: true}))
 
 
-// app.get('/seed', (req, res) => {
-//     MarksmanSchema.create(seed).then(() => {
-//         res.send(seed)
-//     })
-// })
+app.get('/seed', (req, res) => {
+    MarksmanSchema.create(seed).then(() => {
+        res.send(seed)
+    })
+})
 
 app.get('/', (req, res) => {
     res.send('Working on some marksmen')

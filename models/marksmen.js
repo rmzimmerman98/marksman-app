@@ -2,7 +2,7 @@ module.exports = [
     {
         name: 'Akshan',
         title: 'the Rouge Sentinel',
-        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3b/AkshanSquare.png/revision/latest?cb=20210725215647',
+        picture: 'https://static.wikia.nocookie.net/leagueoflegends/images/5/5f/Akshan_OriginalSquare.png/',
         passive: 
         {
             name: 'Dirty Fighting',
@@ -26,7 +26,7 @@ module.exports = [
         ultimate:
         {
             name: 'Comeuppance',
-            description: 'ACTIVE: Akshan locks onto the target enemy champion and begins Channeling icon.png channeling for 2.5 seconds, revealing them as well as revealing himself. He gradually stores bullets into his weapon over the duration. Comeuppance will recast after the duration, or can recast early after 0.5 seconds. Comeuppance is placed on a 5-second cooldown if the channel is cancelled. RECAST: Akshan fires all stored bullets at the target, each briefly granting sight around their trajectory and dealing physical damage to the first enemy hit, increaseing based on the target\'s missing health. The shots can hit structures. Each bullet\'s damage applies life steal at 100% effectiveness, and executes minions.'
+            description: 'ACTIVE: Akshan locks onto the target enemy champion and begins channeling for 2.5 seconds, revealing them as well as revealing himself. He gradually stores bullets into his weapon over the duration. Comeuppance will recast after the duration, or can recast early after 0.5 seconds. Comeuppance is placed on a 5-second cooldown if the channel is cancelled. RECAST: Akshan fires all stored bullets at the target, each briefly granting sight around their trajectory and dealing physical damage to the first enemy hit, increaseing based on the target\'s missing health. The shots can hit structures. Each bullet\'s damage applies life steal at 100% effectiveness, and executes minions.'
         },
         stats:
         {
@@ -43,7 +43,7 @@ module.exports = [
     {
 		name: 'Ashe',
         title: 'the Frost Archer',
-        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/4a/AsheSquare.png/revision/latest?cb=20170728180206',
+        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/4a/AsheSquare.png/',
         passive: 
         {
             name: 'Frost Shot',
@@ -84,7 +84,7 @@ module.exports = [
     {
 		name: 'Caitlyn',
         title: 'the Sheriff of Piltover',
-        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e6/CaitlynSquare.png/revision/latest?cb=20170801175326',
+        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e6/CaitlynSquare.png/',
         passive: 
         {
             name: 'Headshot',
@@ -98,7 +98,7 @@ module.exports = [
         abilityW:
         {
             name: 'Yordle Snap Trap',
-            description: 'ACTIVE: Caitlyn sets a visible trap at the target location that is untargetable and arms after 1 second, lasting for a duration. The trap grants Sight icon.png sight of the area for 1 second after being placed. Caitlyn periodically stocks a Yordle Snap Trap charge, up to a maximum amount. Deploying traps beyond the maximum destroys the oldest one. The next enemy champion that springs the trap is Root icon.png rooted for 1.5 seconds and True Sight icon.png revealed for 3 seconds, as well as takes additional damage from Headshot Headshot. Trapped targets become immune to further Yordle Snap Traps for 3 seconds.'
+            description: 'ACTIVE: Caitlyn sets a visible trap at the target location that is untargetable and arms after 1 second, lasting for a duration. The trap grants sight of the area for 1 second after being placed. Caitlyn periodically stocks a Yordle Snap Trap charge, up to a maximum amount. Deploying traps beyond the maximum destroys the oldest one. The next enemy champion that springs the trap is rooted for 1.5 seconds and revealed for 3 seconds, as well as takes additional damage from Headshot Headshot. Trapped targets become immune to further Yordle Snap Traps for 3 seconds.'
         },
         abilityE:
         {
@@ -125,7 +125,7 @@ module.exports = [
     {
 		name: 'Draven',
         title: 'the Glorious Executioner',
-        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d7/DravenSquare.png/revision/latest?cb=20170801201235',
+        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d7/DravenSquare.png/',
         passive: 
         {
             name: 'League of Draven',
@@ -166,7 +166,7 @@ module.exports = [
     {
 		name: 'Ezreal',
         title: 'the Prodigal Explorer',
-        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c3/EzrealSquare.png/revision/latest?cb=20170801212628',
+        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c3/EzrealSquare.png/',
         passive: 
         {
             name: 'Rising Spell Force',
@@ -207,7 +207,7 @@ module.exports = [
     {
 		name: 'Jhin',
         title: 'the Virtuoso',
-        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8b/JhinSquare.png/revision/latest?cb=20200327221914',
+        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8b/JhinSquare.png/',
         passive: 
         {
             name: 'Whisper',
@@ -248,7 +248,7 @@ module.exports = [
     {
 		name: 'Jinx',
         title: 'the Loose Cannon',
-        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e2/JinxSquare.png/revision/latest?cb=20170802020615',
+        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e2/JinxSquare.png/',
         passive: 
         {
             name: 'Get Excited!',
@@ -289,7 +289,7 @@ module.exports = [
     {
 		name: 'Kai\'sa',
         title: 'Daughter of the Void',
-        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/49/Kai%27SaSquare.png/revision/latest?cb=20180222044444',
+        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/49/Kai%27SaSquare.png/',
         passive: 
         {
             name: 'Second Skin',
@@ -330,7 +330,7 @@ module.exports = [
     {
 		name: 'Kalista',
         title: 'the Spear of Vengeance',
-        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/aa/KalistaSquare.png/revision/latest?cb=20170802024107',
+        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/aa/KalistaSquare.png/',
         passive: 
         {
             name: 'Martial Poise',
@@ -371,7 +371,7 @@ module.exports = [
     {
 		name: 'Kindred',
         title: 'the Eternal Hunters',
-        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6e/KindredSquare.png/revision/latest?cb=20170802031055',
+        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6e/KindredSquare.png/',
         passive: 
         {
             name: 'Mark of the Kindred',
@@ -380,7 +380,7 @@ module.exports = [
         abilityQ: 
         {
             name: 'Dance of Arrows',
-            description: 'ACTIVE: Lamb Dash.png dashes toward the target location, gaining Attack speed icon.png 35% (+ 5% per mark mark) bonus attack speed for 4 seconds and firing an arrow at up to 3 nearby Sight icon.png visible enemies that deals physical damage. Her current attack target within any proximity will be prioritized by one of the arrows.Dance of Arrows\' Cooldown icon.png total cooldown is reduced to an amount while Lamb is within the area of Wolf\'s Frenzy Wolf\'s Frenzy. Casting Wolf\'s Frenzy reduces Dance of Arrows\' current cooldown to the same amount.'
+            description: 'ACTIVE: Lamb dashes toward the target location, gaining 35% (+ 5% per mark mark) bonus attack speed for 4 seconds and firing an arrow at up to 3 nearby visible enemies that deals physical damage. Her current attack target within any proximity will be prioritized by one of the arrows. Dance of Arrows\' total cooldown is reduced to an amount while Lamb is within the area of Wolf\'s Frenzy. Casting Wolf\'s Frenzy reduces Dance of Arrows\' current cooldown to the same amount.'
         },
         abilityW:
         {
@@ -412,7 +412,7 @@ module.exports = [
     {
 		name: 'Kog\'Maw',
         title: 'the Mouth of the Abyss',
-        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/45/Kog%27MawSquare.png/revision/latest?cb=20170802031916',
+        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/45/Kog%27MawSquare.png/',
         passive: 
         {
             name: 'Icathian Surprise',
@@ -453,7 +453,7 @@ module.exports = [
     {
 		name: 'Lucian',
         title: 'the Purifier',
-        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1e/LucianSquare.png/revision/latest?cb=20170802043353',
+        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1e/LucianSquare.png/',
         passive: 
         {
             name: 'Lightslinger',
@@ -477,7 +477,7 @@ module.exports = [
         ultimate:
         {
             name: 'The Culling',
-            description: 'ACTIVE: Lucian Channeling icon.png channels for up to 3 seconds, rapidly firing up to 22 shots (based on critical strike chance) in the target direction. Each shot deals physical damage to the first enemy hit, doubled against minions. The Culling can be recast after 0.75 seconds during the channel, and does so automatically when the channel ends. While channeling, Lucian is ghosted and may still move and cast Relentless Pursuit. RECAST: Lucian ends The Culling.'
+            description: 'ACTIVE: Lucian channels for up to 3 seconds, rapidly firing up to 22 shots (based on critical strike chance) in the target direction. Each shot deals physical damage to the first enemy hit, doubled against minions. The Culling can be recast after 0.75 seconds during the channel, and does so automatically when the channel ends. While channeling, Lucian is ghosted and may still move and cast Relentless Pursuit. RECAST: Lucian ends The Culling.'
         },
         stats:
         {
@@ -494,7 +494,7 @@ module.exports = [
     {
 		name: 'Miss Forture',
         title: 'the Bounty Hunter',
-        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9d/MissFortuneSquare.png/revision/latest?cb=20170802061243',
+        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9d/MissFortuneSquare.png/',
         passive: 
         {
             name: 'Love Tap',
@@ -535,7 +535,7 @@ module.exports = [
     {
 		name: 'Samira',
         title: 'the Desert Rose',
-        picture: 'https://static.wikia.nocookie.net/leagueoflegends/images/3/31/Samira_OriginalSquare.png/revision/latest/scale-to-width-down/75?cb=20200829040527',
+        picture: 'https://static.wikia.nocookie.net/leagueoflegends/images/3/31/Samira_OriginalSquare.png/',
         passive: 
         {
             name: 'Daredevil Impulse',
@@ -576,7 +576,7 @@ module.exports = [
     {
 		name: 'Senna',
         title: 'the Redeemer',
-        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/21/SennaSquare.png/revision/latest?cb=20191102003549',
+        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/21/SennaSquare.png/',
         passive: 
         {
             name: 'Absolution',
@@ -617,7 +617,7 @@ module.exports = [
     {
 		name: 'Sivir',
         title: 'the Battle Mistress',
-        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e1/SivirSquare.png/revision/latest?cb=20170802131925',
+        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e1/SivirSquare.png/',
         passive: 
         {
             name: 'Fleet of Foot',
@@ -658,7 +658,7 @@ module.exports = [
     {
 		name: 'Tristana',
         title: 'the Yordle Gunner',
-        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/06/TristanaSquare.png/revision/latest?cb=20200327221741',
+        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/06/TristanaSquare.png/',
         passive: 
         {
             name: 'Draw a Bead',
@@ -699,11 +699,11 @@ module.exports = [
     {
 		name: 'Twitch',
         title: 'the Plague Rat',
-        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/79/TwitchSquare.png/revision/latest?cb=20170802161732',
+        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/79/TwitchSquare.png/',
         passive: 
         {
             name: 'Deadly Venom',
-            description: 'INNATE: Twitch\'s basic attacks on-hit apply a stack of Deadly Venom for 6 seconds, refreshing on subsequent applications and stacking up to 6 times. DEADLY VENOM: For each stack, the target is dealt increasing true damage per second over the duration. This effect is considered a Poison icon.png poison.'
+            description: 'INNATE: Twitch\'s basic attacks on-hit apply a stack of Deadly Venom for 6 seconds, refreshing on subsequent applications and stacking up to 6 times. DEADLY VENOM: For each stack, the target is dealt increasing true damage per second over the duration. This effect is considered a poison.'
         },
         abilityQ: 
         {
@@ -740,7 +740,7 @@ module.exports = [
     {
 		name: 'Varus',
         title: 'the Arrow of Retribution',
-        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c2/VarusSquare.png/revision/latest?cb=20171215034329',
+        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c2/VarusSquare.png/',
         passive: 
         {
             name: 'Living Vengeance',
@@ -781,7 +781,7 @@ module.exports = [
     {
 		name: 'Vayne',
         title: 'the Night Hunter',
-        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/95/VayneSquare.png/revision/latest?cb=20170802170334',
+        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/95/VayneSquare.png/',
         passive: 
         {
             name: 'Night Hunter',
@@ -822,7 +822,7 @@ module.exports = [
     {
 		name: 'Xayah',
         title: 'the Rebel',
-        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b5/XayahSquare.png/revision/latest?cb=20170802181210',
+        picture: 'https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b5/XayahSquare.png/',
         passive: 
         {
             name: 'Clean Cuts',
@@ -863,7 +863,7 @@ module.exports = [
     {
 		name: 'Zeri',
         title: 'the Spark of Zaun',
-        picture: 'https://static.wikia.nocookie.net/leagueoflegends/images/7/7d/Zeri_OriginalSquare.png/revision/latest/smart/width/250/height/250?cb=20220330171840',
+        picture: 'https://static.wikia.nocookie.net/leagueoflegends/images/7/7d/Zeri_OriginalSquare.png/',
         passive: 
         {
             name: 'Living Battery',

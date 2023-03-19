@@ -2,19 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title><%=Marksman.name%></title>
 </head>
 <body>
+    <div class=".container p-1">
     <nav>
         <a href="/marksmen">Back to Marksmen</a>
     </nav>
-    <h1><%=Marksman.name%></h1>
+    <h1><%=Marksman.name%>, <%=Marksman.title%></h1>
     <p>
-        Name: <%=Marksman.name%> <%=Marksman.title%>
+        <div class="hstack">
+            <div class="w-auto p-3">
+                <img src="<%=Marksman.picture%>"><br>
+            </div>
+            <div class="w-auto p-3">
+                Health at Level 1: <%=Marksman.stats.health1%> <br> 
+                Health at Level 18: <%=Marksman.stats.health18%> <br>
+                Movement Speed: <%=Marksman.stats.speed%> <br>
+            </div>
+            <div class="w-auto p-3">
+                Attack at Level 1: <%=Marksman.stats.attack1%> <br> 
+                Attack at Level 18: <%=Marksman.stats.attack18%> <br>
+                Attack Range: <%=Marksman.stats.range%> <br>
+            </div>
+        </div>
+        Abilities: <br>
+        <%=Marksman.passive.name%>: <br>
+        <%=Marksman.passive.description%> <br>
+        <br>
+        <%=Marksman.abilityQ.name%>: <br>
+        <%=Marksman.abilityQ.description%> <br>
+        <br>
+        <%=Marksman.abilityW.name%>: <br>
+        <%=Marksman.abilityW.description%> <br>
+        <br>
+        <%=Marksman.abilityE.name%>: <br>
+        <%=Marksman.abilityE.description%> <br>
+        <br>
+        <%=Marksman.ultimate.name%>: <br>
+        <%=Marksman.ultimate.description%>
+        <br>
     </p>
     <form action="/<%=Marksman.id%>?_method=DELETE" method="POST">
         <input type="submit" value="DELETE">
         <a href="/<%=Marksman.id%>/edit">Edit</a>
     </form>
+</div>
 </body>
 </html>
