@@ -11,7 +11,7 @@ My project was originally going to be a compilation of every character in League
 
 /marksmen (Get): Shows the index, compiling all of the marksmen in easy to access cards
 
-/marsmen/new (Get): Renders new.ejs, a form to add in info for a new entry
+/marksmen/new (Get): Renders new.ejs, a form to add in info for a new entry
 
 /:id (Get): Shows a specific champion, including their abilities and stats
 
